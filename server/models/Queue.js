@@ -3,7 +3,15 @@ const Schema = mongoose.Schema
 
 const queueSchema = new Schema({
     qNumber : {
-        type: string,
+        type: String,
+        required: true
+    },
+    name : {
+        type: String,
+        required: true
+    },
+    phoneNumber : {
+        type: String,
         required: true
     },
     date : {
